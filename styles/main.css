@@ -1,0 +1,11 @@
+
+.dashboard{
+    display: flex;
+}
+.main{
+    width: calc(100% - 256px);
+}
+.content{
+    background-color: #F6F6F8;
+    height: calc(100vh - 64px);
+}

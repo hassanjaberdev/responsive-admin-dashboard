@@ -1,74 +1,126 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dashboard</title>
-    <link rel="stylesheet" href="../styles/layout/sidebar.css">
-    <link rel="stylesheet" href="../styles/base/normalize.css">
-</head>
-<body>
+    <link rel="stylesheet" href="../styles/main.css" />
+    <link rel="stylesheet" href="../styles/layout/sidebar.css" />
+    <link rel="stylesheet" href="../styles/layout/navbar.css" />
+    <link rel="stylesheet" href="../styles/base/normalize.css" />
+  </head>
+  <body>
     <div class="dashboard">
-        <aside class="sidebar">
-            <div class="logo">
-                <img src="../assets/images/logo.svg" alt="logo">
-                <h1>NexusView</h1>
-            </div>
-            <ul class="links">
-                <li class="active sidebar-link">
-                    <a href="">
-                        <img src="../assets/images/Dashboard-icon.svg" alt="dashboard-icon">
-                        <span>Dashboard</span>
-                    </a>
-                </li>
-                <li class="sidebar-link">
-                    <a href="">
-                        <img src="../assets/images/Users-icon.svg" alt="users-icon">
-                        <span>Users</span>
-                    </a>
-                </li>
-                <li class="sidebar-link">
-                    <a href="">
-                        <img src="../assets/images/Analytics-icon.svg" alt="analytics-icon">
-                        <span>Analytics</span>
-                    </a>
-                </li>
-                <li class="sidebar-link">
-                    <a href="">
-                        <img src="../assets/images/Orders-icon.svg" alt="orders-icon">
-                        <span>Orders</span>
-                    </a>
-                </li>
-                <li class="sidebar-link">
-                    <a href="">
-                        <img src="../assets/images/Messages-icon.svg" alt="messages-icon">
-                        <span>Messages</span>
-                    </a>
-                </li>
-                <li class="sidebar-link">
-                    <a href="">
-                        <img src="../assets/images/Settings-icon.svg" alt="settings-icon">
-                        <span>Settings</span>
-                    </a>
-                </li>
-                
-            </ul>
-            <div class="plan-type">
-                <div class="plan-info">
-                    <p class="plan-name">Current Plan</p>
-                    <p class="plan-type-name">Startup Pro</p>
-                    <div class="progress-bar">
-                        <div class="progress"></div>
-                    </div>
-                    <p class="progress-text">75% of data usage used</p>
-                </div>
-            </div>
-        </aside>
-        <div class="main">
-            <header class="navbar"></header>
-            <main class="content"></main>
+      <aside class="sidebar">
+        <div class="logo">
+          <img src="../assets/images/logo.svg" alt="logo" />
+          <h1>NexusView</h1>
         </div>
+        <ul class="links">
+          <li class="active sidebar-link">
+            <a href="">
+              <img
+                src="../assets/images/Dashboard-icon.svg"
+                alt="dashboard-icon"
+              />
+              <span>Dashboard</span>
+            </a>
+          </li>
+          <li class="sidebar-link">
+            <a href="">
+              <img src="../assets/images/Users-icon.svg" alt="users-icon" />
+              <span>Users</span>
+            </a>
+          </li>
+          <li class="sidebar-link">
+            <a href="">
+              <img
+                src="../assets/images/Analytics-icon.svg"
+                alt="analytics-icon"
+              />
+              <span>Analytics</span>
+            </a>
+          </li>
+          <li class="sidebar-link">
+            <a href="">
+              <img src="../assets/images/Orders-icon.svg" alt="orders-icon" />
+              <span>Orders</span>
+            </a>
+          </li>
+          <li class="sidebar-link">
+            <a href="">
+              <img
+                src="../assets/images/Messages-icon.svg"
+                alt="messages-icon"
+              />
+              <span>Messages</span>
+            </a>
+          </li>
+          <li class="sidebar-link">
+            <a href="">
+              <img
+                src="../assets/images/Settings-icon.svg"
+                alt="settings-icon"
+              />
+              <span>Settings</span>
+            </a>
+          </li>
+        </ul>
+        <div class="plan-type">
+          <div class="plan-info">
+            <p class="plan-name">Current Plan</p>
+            <p class="plan-type-name">Startup Pro</p>
+            <div class="progress-bar">
+              <div class="progress"></div>
+            </div>
+            <p class="progress-text">75% of data usage used</p>
+          </div>
+        </div>
+      </aside>
+      <div class="main">
+        <header class="navbar">
+          <form action="#">
+            <input
+              type="text"
+              placeholder="Search analytics, users, or reports..."
+            />
+            <button type="submit">
+              <img src="../assets/images/Search-icon.svg" alt="search-icon" />
+            </button>
+          </form>
+          <div class="navbar-user-area">
+            <div class="action-icons">
+              <div class="notification">
+                <img
+                  src="../assets/images/Notification-icon.svg"
+                  alt="notification-icon"
+                />
+              </div>
+              <div class="help">
+                <img src="../assets/images/help-icon.svg" alt="help-icon" />
+              </div>
+              <div class="vertical-divider"></div>
+              <div class="layout-mode">
+                <img
+                  src="../assets/images/layout-mode.svg"
+                  alt="layout-mode-icon"
+                />
+              </div>
+            </div>
+            <div class="account-dropdown-trigger">
+              <div class="user-info">
+                <span>John Doe</span>
+                <span>Admin</span>
+              </div>
+              <div class="user-avatar">
+                <img src="../assets/images/user-avatar.svg" alt="user-avatar" />
+              </div>
+            </div>
+          </div>
+        </header>
+        <main class="content"></main>
+      </div>
     </div>
     <script src="../js/components/sidebar.js"></script>
-</body>
+  </body>
 </html>
